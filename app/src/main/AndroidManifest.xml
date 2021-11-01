@@ -10,8 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsApp">
         <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/NoActionBar">
+
+        </activity>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.NewsApp.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,5 +26,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
